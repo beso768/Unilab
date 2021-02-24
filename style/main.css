@@ -1,0 +1,245 @@
+body,html {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F6F8F9;
+    font-family: 'Helvetica';
+}
+header, ul , .banner-description , footer ul , .footer-nav, .left-side , .more-news , .banner , .news , .time , .title ,.article-wrapper ,.small , footer{
+    display: flex;
+}
+header{
+    width: 100%;
+    padding: 15px 30px 15px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 13px;
+    font-weight: bold;
+    color: #FA6980;
+}
+ul{
+    justify-content: space-between;
+}
+li a{
+    font-size: 11px;
+    color: #343638;
+    opacity: 0.5;
+    font-weight: bold;
+}
+li:nth-child(1) a{
+    opacity: 1;
+}
+/* section 1 */
+.banner-image{
+    position: relative;
+    width: 840px;
+}
+.text{
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+}
+.text h2{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 40px ;
+}
+.divider{
+    width: 100%;
+    height: 2px;
+    margin: 40px 0;
+    background-color: white;
+}
+
+.text h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.text p{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 0 20px 0;
+}
+.text button {
+    color: #ffffff;
+    width: 134px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FA6980;
+    cursor: pointer;
+    font-weight: bold;
+}
+.banner-description{
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    padding: 99px 120px 0px 120px;
+}
+.more-news{
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-arrow{
+    padding-right: 40px;
+    opacity: 0.5;
+}
+.arrows img{
+    cursor: pointer;
+}
+.banner-description .divider{
+    width: 100%;
+    height: 2px;
+    margin: 40px 0;
+    background-color: #EBEDED;
+}
+.news{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.news h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #FA6980;
+}
+.news h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin: 20px 0 10px 0;
+}
+.news p{
+    font-weight: normal;
+    color: #A6ADB4;
+}
+.time{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.container{
+    margin: 0 auto;
+    padding: 50px 130px;
+}
+.title{
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.title h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.article-wrapper{
+    justify-content: space-between;
+}
+.child-box {
+    width: 360px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.child-box h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.child-box p {
+    font-size: 13px;
+    color: #A6ADB4;
+}
+.article-description{
+    padding: 45px;
+}
+.child-box .time{
+    margin-top: 20px;
+}
+.happening-now{
+    padding: 50px 0 100px 0;
+}
+.large-child{
+    position: relative;
+    color: white;
+}
+.large-child h5{
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    font-weight: bold;
+}
+.small{
+    justify-content: space-between;
+    flex-direction: column;
+}
+.small .article-description{
+    padding: 25px 0 45px 0;
+}
+footer{
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 60px 140px;
+    background-color: #A6ADB4;
+}
+/* footer navigation-------------------- */
+footer .logo{
+    color: white;
+}
+footer ul{
+    flex-direction: column;
+    margin-left: 60px;
+}
+footer ul a{
+    font-weight: bold;
+    color: #CBD0D3;
+    opacity: 1;
+    font-size: 13px;
+}
+/* form------------------------------ */
+footer form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#email {
+    width: 260px;
+    height: 40px;
+    margin: 0 0 20px 0;
+    background-color: #f8f8f800;
+    border: 2px solid #ffffff2e;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff26;
+    padding: 10px;
+    outline: none;
+}
+#email:focus{
+    border: 2px solid #ffffff;
+    background-color: #ffffff47;
+}
+form img{
+    width: 16px;
+    position: absolute;
+    bottom: 42px;
+    right: 10px;
+}
+.send{
+    cursor: pointer;
+}
+.f-label{
+    font-size: 11px;
+    color: #CBD0D3;
+}
+/* social media icons------------------------------ */
+.icons{
+    flex-direction: row;
+}
+.icons li{
+    margin-left: 30px;
+}
