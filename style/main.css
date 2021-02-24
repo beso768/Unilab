@@ -4,7 +4,11 @@ body,html {
     background-color: #F6F8F9;
     font-family: 'Helvetica';
 }
-header, ul , .banner-description , footer ul , .footer-nav, .left-side , .more-news , .banner , .news , .time , .title ,.article-wrapper ,.small , footer{
+#mainDiv{
+    display: none;
+}
+/* display-flex property--------------------- */
+header, ul , .banner-description , footer ul , .footer-nav, .left-side , .more-news , .banner , .news , .article1, .time , .title ,.article-wrapper ,.small , footer ,.rightSide , .world-news , .news-text{
     display: flex;
 }
 header{
@@ -23,12 +27,23 @@ ul{
 }
 li a{
     font-size: 11px;
-    color: #343638;
-    opacity: 0.5;
+    color: #34363883;
     font-weight: bold;
+    border-radius: 8px;
+    padding: 3px;
+    transition: 0.2s;
+}
+header li{   
+    padding-right: 25px;
 }
 li:nth-child(1) a{
-    opacity: 1;
+    color:  #343638;
+}
+nav a:hover{
+    box-shadow: 0 0 4px 2px rgb(41, 41, 41);
+}
+.rightSide{
+    align-items: center;
 }
 /* section 1 */
 .banner-image{
@@ -46,15 +61,10 @@ li:nth-child(1) a{
 .text h2{
     font-size: 25px;
     font-weight: bold;
-    padding-bottom: 40px ;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #EBEDED;
+    margin-bottom: 40px;
 }
-.divider{
-    width: 100%;
-    height: 2px;
-    margin: 40px 0;
-    background-color: white;
-}
-
 .text h3{
     font-size: 24px;
     font-weight: bold;
@@ -64,7 +74,7 @@ li:nth-child(1) a{
     font-weight: normal;
     padding: 10px 0 20px 0;
 }
-.text button {
+button {
     color: #ffffff;
     width: 134px;
     height: 40px;
@@ -73,6 +83,10 @@ li:nth-child(1) a{
     background-color: #FA6980;
     cursor: pointer;
     font-weight: bold;
+    outline: none;
+}
+button:focus{
+    border: 2px #f83555;
 }
 .banner-description{
     width: 100%;
@@ -85,6 +99,8 @@ li:nth-child(1) a{
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #EBEDED;
+    padding-bottom: 40px;
 }
 .left-arrow{
     padding-right: 40px;
@@ -92,12 +108,6 @@ li:nth-child(1) a{
 }
 .arrows img{
     cursor: pointer;
-}
-.banner-description .divider{
-    width: 100%;
-    height: 2px;
-    margin: 40px 0;
-    background-color: #EBEDED;
 }
 .news{
     width: 100%;
@@ -138,30 +148,39 @@ li:nth-child(1) a{
 .article-wrapper{
     justify-content: space-between;
 }
-.child-box {
-    width: 360px;
+.small-child {
+    max-width: 360px;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
+    width: 100%;
 }
-.child-box h4{
+.small-child h4{
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.child-box p {
+.small-child p {
     font-size: 13px;
     color: #A6ADB4;
 }
 .article-description{
-    padding: 45px;
+    padding: 25px 0 23px 0;
 }
-.child-box .time{
+.small-child .time{
     margin-top: 20px;
 }
 .happening-now{
     padding: 50px 0 100px 0;
+}
+.large{
+    width: 70%;
+    padding-right: 2%;
+}
+.back-picture{
+    width: 100%;
+    max-width: 760px;
 }
 .large-child{
     position: relative;
@@ -174,11 +193,12 @@ li:nth-child(1) a{
     font-weight: bold;
 }
 .small{
+    width: 30%;
     justify-content: space-between;
     flex-direction: column;
 }
-.small .article-description{
-    padding: 25px 0 45px 0;
+.small-picture{
+    width: 100%;
 }
 footer{
     justify-content: space-between;
@@ -201,12 +221,16 @@ footer ul a{
     opacity: 1;
     font-size: 13px;
 }
+footer li:nth-child(1) a{
+    color: #CBD0D3;;
+}
 /* form------------------------------ */
-footer form{
+form{
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
 #email {
     width: 260px;
     height: 40px;
@@ -242,4 +266,172 @@ form img{
 }
 .icons li{
     margin-left: 30px;
+}
+/* PAGE 2---------------------------------------------------------------- */
+.Container{
+    padding: 40px 140px 0 140px;
+}
+.story a{
+    color: black;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.story span{
+    padding-left: 15px;
+    color: #a6adb4;
+}
+.filter img{
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #0000005e;
+    cursor: pointer;
+}
+.bannerImage{
+    position: relative;
+    width: 50%;
+}
+.background-image{
+    width: 100%;
+}
+.news-text{
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.news-text h2{
+    font-size: 32px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.divider{
+    width: 40px;
+    height: 3px;
+    background-color: #FA6980 ;
+    margin: 40px 0;
+}
+.news-text h3 {
+    font-size: 16px;
+    text-align: center;
+}
+.inputs{
+    width: 50%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 125px 110px;
+}
+.avatar{
+    width: 40px;
+    border-radius: 25px;
+    margin-bottom: 14px;
+}
+.inputs input{
+    outline: none;
+    width: 360px;
+    height: 40px;
+    border: 3px solid #EBEDED;
+    border-radius: 8px;
+    margin: 10px 0 40px 0;
+}
+.inputs label {
+    font-size: 13px;
+    font-weight: bold;
+}
+.article1{
+    justify-content: space-between;
+    padding: 40px 0;
+    border-top: 2px solid #EBEDED;
+    border-bottom: 2px solid #EBEDED;
+    margin: 38px 0;
+}
+.article1 h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+.article1 p{
+    width: 360px;
+    font-size: 14px;
+    color: #A6ADB4;
+}
+.main-article{
+    margin-bottom: 160px;
+    border-bottom: 2px solid #EBEDED;
+}
+.articleImage{
+    width: 100%;
+}
+.text-area{
+    font-size: 14px;
+    color: #A6ADB4;
+    padding: 40px 400px 0 0;
+}
+.text-area p{
+    margin-bottom: 30px;
+}
+
+
+/* loader--------------------- */
+#loader {
+    background-color: #edf8ff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle {
+    position: absolute;
+    border: 1px solid #ffffff00;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    animation: rotate 1s linear infinite;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(2px 4px 6px #FA6980);
+}
+.loaderlogo {
+    position: absolute;
+    z-index: 2;
+    filter: invert(1);
+}
+.rotate {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    box-shadow: 1px -20px 20px 0px #fa6980;
+    overflow: hidden;
+}
+.unilab{
+    top: 60%;
+    display: flex;
+    position: absolute;
+    font-size: 57px;
+    font-weight: bolder;
+    letter-spacing: 7px;
+    align-items: center;
+    flex-direction: column;
+    animation: fade 2s; 
+}
+.unilab h3{
+    font-size: 24px;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes rotate  {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

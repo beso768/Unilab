@@ -8,13 +8,31 @@
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="journey,nature,tours,trip">
     <meta name="author" content="Beso Gigashvili" />
+    <meta property="og:url"                content="" />
+    <meta property="og:type"               content="Project" />
+    <meta property="og:title"              content="Motorcycle service" />
+    <meta property="og:description"        content="Final Project" />
+    <meta property="og:image"              content="images/icons/" />
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/font.css">
     <link rel="stylesheet" href="style/main.css">
+    <script src="javaScript/main.js" defer></script> 
     
     <title>Unilab Project</title>
 </head>
 <body>
+    <div id="loader">
+        <img class="loaderlogo" src="images/unilablogo.png" alt="logo">
+        <div class="circle"> 
+          <div class="rotate"> </div>
+        </div>
+        <div class="unilab">
+            <h1>UNILAB</h1>
+            <h3>Front-End Development</h3>
+        </div>
+    </div>
+    <div id="mainDiv">
+        
     <!-- header--------- -->
     <header>
         <a href="#" class="logo">LOGO</a>
@@ -46,7 +64,6 @@
             <img src="images/banner.png" alt="banner">
             <div class="text">
                 <h2>WORLD NEWS</h2>
-                <div class="divider"></div>
                 <h3>Amazing places in America to visit.</h3>
                 <p>For some reason — this country, this city, this neighborhood, this particular street —  is the place you are living a majority of your life in.</p>
                 <button> LEARN MORE</button>
@@ -60,7 +77,6 @@
                     <img src="images/ICONS/arrow.png" alt="arrow">
                 </div>
             </div>
-            <div class="divider"></div>
             <div class="news">
                 <h4>TRAVEL</h4>
                 <h5>Article title</h5>
@@ -139,7 +155,7 @@
             <div class="article-wrapper">
                 <div class="large">
                     <article class="large-child">
-                        <img src="images/bridge.png" alt="bridge">
+                        <img src="images/bridge.png" alt="bridge" class="back-picture">
                         <div class="absolute">
                         <h5>CITY</h5>
                         <h4>Large article title</h4>
@@ -151,13 +167,14 @@
                         </div>
                     </article>
                     <article class="large-child">
-                        <img src="images/nature.png" alt="road">
+                        <img src="images/nature.png" alt="road" class="back-picture">
                         
                     </article>
                 </div>
+                <!-- small -->
                 <div class="small">
-                    <article class="child-box">
-                        <img src="images/Image.png" alt="article-image">
+                    <article class="small-child">
+                        <img src="images/elephant.png" alt="article-image" class="small-picture">
                         <div class="article-description">
                             <h4>Small title</h4>
                             <div class="time">
@@ -166,8 +183,8 @@
                             </div>
                         </div>
                     </article>
-                    <article class="child-box">
-                        <img src="images/annie-spratt-216507-unsplash.png" alt="article-image">
+                    <article class="small-child">
+                        <img src="images/roberto-nickson-g-744100-unsplash.png" alt="article-image"  class="small-picture">
                         <div class="article-description">
                             <h4>Small title</h4>
                             <div class="time">
@@ -176,8 +193,8 @@
                             </div>
                         </div>
                     </article>
-                    <article class="child-box">
-                        <img src="images/carlos-hevia-628890-unsplash.png" alt="article-image">
+                    <article class="small-child">
+                        <img src="images/road.png" alt="article-image"  class="small-picture">
                         <div class="article-description">
                             <h4>Small title</h4>
                             <div class="time">
@@ -247,8 +264,8 @@
             </li>
         </ul>
     </footer>
+    </div>
 
-
-    
+ 
 </body>
 </html>
