@@ -1,3 +1,4 @@
+// loader 
 var container = document.getElementById("loaderDiv") ;
 var loader = document.getElementById("loader") ;
 function load(){
@@ -8,6 +9,7 @@ function load(){
 }
 window.addEventListener("load", load()) ;
 
+// burger-icon 
 var burger = document.getElementById("burgerIcon") ;
 var menu = document.getElementById("burgerMenu");
 burgerIcon.addEventListener("click" , function(){
@@ -16,5 +18,12 @@ burgerIcon.addEventListener("click" , function(){
 
 var back = document.getElementById("Back") ;
 back.addEventListener("click" , function(){
-    menu.style.left = "-100%"
-})
+    menu.style.left = "-100%" ;
+});
+
+// redirect code
+// var redirect = document.getElementById("redirect");
+
+// redirect.addEventListener("click" , function(){
+//     "document.location = "index2.html" ;"
+// }); 
