@@ -5,7 +5,7 @@ function load(){
     setTimeout(function (){
         loader.style.display = "none" ;
         container.style.display = "block" ;
-    },2000)
+    },1000)
 }
 window.addEventListener("load", load()) ;
 
