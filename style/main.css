@@ -1,10 +1,9 @@
 body,html {
     margin: 0 auto;
-    width: 100%;
     background-color: #F6F8F9;
     font-family: 'Helvetica';
 }
-#myDiv{
+#mainDivDiv{
     display: none;
 }
 /* display-flex property--------------------- */
@@ -133,6 +132,8 @@ nav a:hover{
 .banner-image img{
     display: none;
     width: 100%;
+    min-height: 390px;
+    object-fit: cover;
 }
 .text{
     position: absolute;
@@ -183,7 +184,7 @@ button:focus{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 7% 7.5%;
+    padding: 50px 80px;
     width: 42%;
 }
 .news-wrapper{
@@ -223,6 +224,9 @@ button:focus{
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 50px;
+}
+.news .time{
+    margin-top: 20px;
 }
 .news h4{
     font-size: 16px;
@@ -288,6 +292,7 @@ button:focus{
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 11px;
+    min-height: 180px;
 }
 .description{
     padding: 8% 11%;
@@ -398,10 +403,13 @@ button:focus{
 }
 .back-picture{
     width: 100%;
+    min-height: 300px;
+    object-fit: cover;
 }
 .large-child{
     position: relative;
     color: white;
+    margin-bottom: 6% ;
 }
 .small{
     width: 30%;
@@ -772,32 +780,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .unilab h3{
     font-size: 24px;
 }
-@-webkit-keyframes fade{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes fade{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@-webkit-keyframes rotate  {
-    from {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-    }
-}
 @keyframes rotate  {
     from {
         -webkit-transform: rotate(0deg);
@@ -872,9 +854,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding-right: 0%;
         min-width: 712px;
     }
-    .large-child{
-        margin-bottom: 6%;
-    }
     .small{
         width: 100%;
         -webkit-box-orient: horizontal;
@@ -948,6 +927,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 }
 @media(max-width: 630px){
+    header{
+        padding: 15px 30px 15px 20px;
+    }
     .Container{
         padding: 20px 20px 0 20px;
     }
@@ -958,8 +940,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .logo{
         color: #A6ADB4;
     }
+    .text {
+        width: 93%;
+    }
     #burgerIcon{
         display: block;
+    }
+    .icons{
+        margin-left: -65px;
     }
     .account img{
         width: 16px;
@@ -981,7 +969,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         display: block;
     }
     .inputs{
-        padding: 20px 20px 0 20px;
+        padding: 20px;
     }
     .search .title{
         padding: 20px 20px 0 20px;
@@ -1003,11 +991,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         height: 33px;
         padding-right: 60px;
     }
-    .time {
-        margin-top: 0px;
+    .bottom-overlay .time img{
+        margin: 0 8px 18px 0;
     }
-    .time img{
-        margin: 0px 8px 18px 0;
+    .news-description{
+        padding: 25px;
+    }
+    .news{
+        width: 100%;
     }
     /* footer------------------ */
     footer {

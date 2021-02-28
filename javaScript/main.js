@@ -1,5 +1,5 @@
 // loader 
-var container = document.getElementById("loaderDiv") ;
+var container = document.getElementById("mainDiv") ;
 var loader = document.getElementById("loader") ;
 function load(){
     setTimeout(function (){
