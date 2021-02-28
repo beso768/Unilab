@@ -49,6 +49,11 @@ header li{
 .child-box{
     position: relative;
     width: 30.33%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.mobile-nav a{
+    align-items: center;
 }
 li:nth-child(1) a{
     color:  #343638;
@@ -283,6 +288,10 @@ button:focus{
     -webkit-filter: brightness(0.5);
             filter: brightness(0.5);
 }
+.child-box:hover .description{
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+}
 .article-image{
     width: 100%;
     -webkit-transition: 0.5s;
@@ -291,7 +300,6 @@ button:focus{
     height: 50%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 11px;
     min-height: 180px;
 }
 .description{
